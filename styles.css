@@ -51,3 +51,7 @@ kbd {
   letter-spacing: .6rem;
   color: yellow;
 }
+
+.bgcolor {
+  background-color: aqua;
+}
