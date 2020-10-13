@@ -1,23 +1,33 @@
 :root {
-  --primary: floralwhite;
-  --secondary: pink;
+  --primary: rgb(34, 34, 34);
+  --secondary: rgb(248, 81, 109);
+  --accent1: white;
+  --accent2: rgb(0, 255, 200);
 }
 
 html {
   font-size: 10px;
+  background-color: var(--primary);
   background-size: cover;
-}
-
-body,html {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
 }
 
-h1{
-    font-size: 5rem;
-    text-align: center;
-    letter-spacing: 2rem;
+h1 {
+  font-size: 5rem;
+  text-align: center;
+  letter-spacing: 2rem;
+  font-weight: lighter;
+  color: var(--secondary);
+}
+
+h2{
+  font-size: 6.5rem;
+  text-align: center;
+  letter-spacing: 1rem;
+  color: var(--accent1);
+  margin: 0px;
 }
 
 .keys {
@@ -35,25 +45,46 @@ h1{
   transition: all .07s ease;
   width: 10rem;
   text-align: center;
-  color: white;
-  background: rgb(0, 0, 0);
+  color: var(--primary);
+  background: var(--secondary);
 }
 
 .playing {
   transform: scale(1.1);
-  border-color: yellow;
-  box-shadow: 0 0 1rem yellow;
+  border-color:var(--accent2);
+  box-shadow: 0 0 1rem var(--accent2);
+}
+
+.glow {
+  transform: scale(1.1);
+  color: var(--accent2);
 }
 
 kbd {
   display: block;
   font-size: 4rem;
+  color: var(--accent2);
 }
 
 .sound {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   text-transform: uppercase;
   letter-spacing: .6rem;
-  color: yellow;
+  color: var(--accent1);
 }
 
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: var(--accent1);
+  text-align: center;
+  font-size: 2rem;
+  background-color: var(--secondary);
+}
+
+i {
+  color: var(--accent1);
+  padding: 2rem;
+}
