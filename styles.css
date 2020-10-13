@@ -1,3 +1,8 @@
+:root {
+  --primary: floralwhite;
+  --secondary: pink;
+}
+
 html {
   font-size: 10px;
   background-size: cover;
@@ -52,6 +57,3 @@ kbd {
   color: yellow;
 }
 
-.bgcolor {
-  background-color: aqua;
-}
